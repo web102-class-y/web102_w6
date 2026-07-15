@@ -47,10 +47,6 @@ GIF created with screentogif
 [ScreenToGif](https://www.screentogif.com/) for Windows
 [peek](https://github.com/phw/peek) for Linux. -->
 
-## Notes
-
-Originally planned to use the REST Countries API, but during development its free v3.1 endpoint turned out to be deprecated — the replacement (v5) requires signing up for an API key, so the project was switched to the Rick and Morty API instead, which is free and requires no key. The dashboard fetches all characters and all episodes across their paginated endpoints on load (using `Promise.all` over each page) so filtering/sorting/searching all happen client-side against the full dataset without extra network requests. Colors in both charts are assigned by a fixed status → hue mapping (Alive/Dead/unknown) so a color always means the same thing no matter how the list is filtered.
-
 ## License
 
     Copyright 2026 Yang
